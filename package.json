@@ -4,9 +4,8 @@
   "description": "",
   "main": "js/index.js",
   "scripts": {
-    "build": "babel js -d lib",
-    "lint": "eslint ./js",
-    "precommit": "npm run lint",
+    "build": "babel src --out-dir js",
+    "dev": "babel src --out-dir js --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,9 +21,6 @@
   "devDependencies": {
     "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.6",
-    "@babel/preset-env": "^7.1.6",
-    "eslint": "^5.9.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0"
+    "@babel/preset-env": "^7.1.6"
   }
 }
