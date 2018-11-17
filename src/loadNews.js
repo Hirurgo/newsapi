@@ -1,8 +1,4 @@
-import { NEWS_URL, NEWS_SECTION, BASE_URL } from './constants.js';
-import renderArticleElement from './renderArticleElement.js';
-import cleanElement from './cleanElement.js';
-
-export default function loadNews(source) {
+function loadNews(source) {
   const url = source ? `${BASE_URL}&sources=${source}` : NEWS_URL;
 
   cleanElement(NEWS_SECTION);

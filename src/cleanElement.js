@@ -1,4 +1,4 @@
-export default function cleanElement(element) {
+function cleanElement(element) {
   while (element.firstChild) {
     element.removeChild(element.firstChild);
   }

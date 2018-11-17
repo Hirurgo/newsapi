@@ -1,6 +1,4 @@
-import { SOURCES_SELECTOR } from './constants.js';
-
-export default function renderSourceElement(source) {
+function renderSourceElement(source) {
   const { name, id } = source;
 
   const sourceElement = document.createElement('option');

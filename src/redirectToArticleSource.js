@@ -1,6 +1,4 @@
-import { NEWS_SECTION } from './constants.js';
-
-export default function redirectToArticleSource(event) {
+function redirectToArticleSource(event) {
   let { target } = event;
 
   while (target !== NEWS_SECTION) {

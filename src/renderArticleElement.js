@@ -1,6 +1,4 @@
-import { NEWS_SECTION } from './constants.js';
-
-export default function renderArticleElement(article) {
+function renderArticleElement(article) {
   const { title, description, url, urlToImage } = article;
 
   const articleElement = document.createElement('article');
