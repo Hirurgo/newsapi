@@ -6,5 +6,5 @@ function renderSourceElement(source) {
   sourceElement.innerHTML = name;
   sourceElement.value = id;
 
-  SOURCES_SELECTOR.appendChild(sourceElement);
+  SOURCE_SELECTOR.appendChild(sourceElement);
 }

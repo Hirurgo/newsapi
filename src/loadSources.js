@@ -1,6 +1,5 @@
-function loadSources() {
-  fetch(SOURCES_URL)
-    .then(response => response.json())
-    .then(json => json.sources)
-    .then(sources => sources.map(renderSourceElement));
+async function loadSources() {
+  const response = await fetch(SOURCES_URL);
+  const { sources } = await response.json();
+  sources.map(renderSourceElement)
 }

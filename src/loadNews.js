@@ -1,10 +1,8 @@
-function loadNews(source) {
-  const url = source ? `${BASE_URL}&sources=${source}` : NEWS_URL;
-
-  cleanElement(NEWS_SECTION);
-
-  fetch(url)
-    .then(response => response.json())
-    .then(json => json.articles)
-    .then(articles => articles.map(renderArticleElement));
+async function loadNews() {
+  cleanElement(NEWS_LIST);
+  const url = TOP_NEWS_TOGGLE_BUTTON.checked ? TOP_NEWS_URL : NEWS_URL;
+  const source = SOURCE_SELECTOR.value;
+  const response = await fetch(`${url}&sources=${source}`);
+  const { articles } = await response.json();
+  articles.map(renderArticleElement)
 }

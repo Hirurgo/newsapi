@@ -1,6 +1,7 @@
-MENU_TOGGLE_BUTTON.addEventListener('click', togleMenu);
-NEWS_SECTION.addEventListener('click', redirectToArticleSource);
-SOURCES_SELECTOR.addEventListener('change', loadNewsBySource);
+MENU_TOGGLE_BUTTON.addEventListener('click', toggleMenu);
+TOP_NEWS_TOGGLE_BUTTON.addEventListener('click', handleToggleTopNews);
+SOURCE_SELECTOR.addEventListener('change', handleSelectSource);
+NEWS_LIST.addEventListener('click', redirectToArticleSource);
 
 loadSources();
 loadNews();

@@ -27,5 +27,5 @@ function renderArticleElement(article) {
     articleElement.appendChild(imgElement);
   }
 
-  NEWS_SECTION.appendChild(articleElement);
+  NEWS_LIST.appendChild(articleElement);
 }
