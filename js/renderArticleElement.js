@@ -1,11 +1,11 @@
 import { NEWS_SECTION } from './constants.js';
 
-export const renderArticleElement = article => {
+export default function renderArticleElement(article) {
   const { title, description, url, urlToImage } = article;
-  
+
   const articleElement = document.createElement('article');
   articleElement.classList.add('article');
-  articleElement.setAttribute("data-url", url);
+  articleElement.setAttribute('data-url', url);
 
   if (title) {
     const titleElement = document.createElement('h3');
@@ -29,5 +29,5 @@ export const renderArticleElement = article => {
     articleElement.appendChild(imgElement);
   }
 
-  NEWS_SECTION.appendChild(articleElement)
+  NEWS_SECTION.appendChild(articleElement);
 }
