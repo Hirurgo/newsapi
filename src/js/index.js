@@ -1,3 +1,5 @@
+import '../css';
+
 import {
   MENU_TOGGLE_BUTTON,
   TOP_NEWS_TOGGLE_BUTTON,
