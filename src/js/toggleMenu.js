@@ -1,6 +1,6 @@
-"use strict";
+import { MENU, MENU_TOGGLE_BUTTON } from './constants';
 
-function toggleMenu(event) {
+export default function toggleMenu(event) {
   if (event) event.preventDefault();
   MENU.classList.toggle('show');
   MENU_TOGGLE_BUTTON.classList.toggle('active');

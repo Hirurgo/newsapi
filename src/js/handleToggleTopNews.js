@@ -1,4 +1,7 @@
-function handleToggleTopNews(event) {
+import { SOURCE_SELECTOR } from './constants';
+import loadNews from './loadNews';
+
+export default function handleToggleTopNews(event) {
   if (SOURCE_SELECTOR.selectedIndex === 0) {
     event.preventDefault();
     SOURCE_SELECTOR.classList.add('error');
