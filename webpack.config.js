@@ -6,11 +6,12 @@ const isProd = env => env === 'production';
 module.exports = env => ({
   mode: env,
   entry: {
-    main: './src/js/index.js'
+    welcome: './src/WelcomePage/script.js',
+    news: './src/NewsPage/js/index.js'
   },
   output: {
+    filename: '[name].js',
     path: path.join(__dirname, 'docs'),
-    filename: 'bundle.js',
   },
   module: {
     rules: [
@@ -43,7 +44,14 @@ module.exports = env => ({
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: './src/index.html',
+      template: './src/WelcomePage/index.html',
+      chunks: ['welcome'],
+      minify: isProd(env)
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'news.html',
+      template: './src/NewsPage/index.html',
+      chunks: ['news'],
       minify: isProd(env)
     })
   ]
