@@ -36,7 +36,7 @@ module.exports = env => ({
   },
   devtool: isProd(env) ? undefined : 'source-map',
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, 'docs'),
     compress: true,
     stats: 'errors-only',
     port: 9000
