@@ -19,9 +19,17 @@ module.exports = env => ({
         use: ["style-loader", "css-loader", "postcss-loader"]
       },
       {
+        test: /\.scss$/,
+        use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"]
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
+      },
+      {
+        test: /\.(png|jpg|gif|svg|ico)$/i,
+        loader: 'url-loader'
       }
     ]
   },

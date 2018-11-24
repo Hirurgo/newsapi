@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300i,400');
+$font: 'Montserrat', sans-serif;
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  max-width: 70%;
+  margin: 0 auto;
+  font-family: $font;
+}

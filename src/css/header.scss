@@ -1,24 +1,19 @@
 .header {
-    background-color: white;
-    border-bottom: 3px solid black;
-    position: fixed;
-    width: 100%;
-    max-width: 70%;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 15px 30px 0px rgba(255,255,255,1);
-  }
-  
-  .header h1 {
+  background-color: white;
+  border-bottom: 3px solid black;
+  position: fixed;
+  width: 100%;
+  max-width: 70%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 15px 30px 0px rgba(255,255,255,1);
+  h1 {
     padding-right: 100px;
   }
-  
-  
-  
-  .header .menu {
+  .menu {
     display: none;
     position: absolute;
     right: 0;
@@ -37,8 +32,8 @@
     z-index: 19;
     user-select: none;
   }
-  
-  .header .menu.show div {
+
+  .menu.show div {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -48,12 +43,12 @@
     height: 100%;
     max-height: 450px;
   }
-  
-  .header .menu.show {
+
+  .menu.show {
     display: block;
   }
-  
-  .header .menu select {
+
+  .menu select {
     width: 100%;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -62,8 +57,8 @@
     font-size: 1em;
     color: black;
   }
-  
-  .header .menu select.error {
+
+  .menu select.error {
     animation: errorBlink 1s linear;
   }
-  
+}

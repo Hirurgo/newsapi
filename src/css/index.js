@@ -1,12 +1,12 @@
-import '../css/default.css';
+import '../css/default.scss';
 
-import '../css/header.css';
-import '../css/newsList.css';
-import '../css/article.css';
-import '../css/footer.css';
+import '../css/header.scss';
+import '../css/newsList.scss';
+import '../css/article.scss';
+import '../css/footer.scss';
 
-import '../css/menuButton.css';
-import '../css/switchButtons.css';
+import '../css/menuButton.scss';
+import '../css/switchButtons.scss';
 
-import '../css/keyframes.css';
-import '../css/media.css';
+import '../css/keyframes.scss';
+import '../css/media.scss';

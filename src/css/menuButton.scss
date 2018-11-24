@@ -1,0 +1,78 @@
+.header {
+  .menu-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 96px;
+    height: 96px;
+    transform: scale(0.7);
+    font-size: 0;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    background-color: transparent;
+    z-index: 20;
+
+    &:focus {
+      outline: none;
+    }
+    
+    &.active span {
+      background: none;
+      &::before {
+        top: 0;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        bottom: 0;
+        transform: rotate(-45deg);
+      }
+
+      &::before,
+      &::after {
+        background-color: black;
+        transition-delay: 0s, 0.3s;
+      }
+    }
+    
+    span {
+      display: block;
+      position: absolute;
+      top: 44px;
+      left: 18px;
+      right: 18px;
+      height: 3px;
+      background: black;
+      transition: 0.3s;
+
+      &::before,
+      &::after {
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        content: "";
+        transition-duration: 0.3s, 0.3s;
+        transition-delay: 0.3s, 0s;
+      }
+
+      &::before {
+        top: -20px;
+        transition-property: top, transform;
+      }
+
+      &::after {
+        bottom: -20px;
+        transition-property: bottom, transform;
+      }
+    }
+  }
+}
