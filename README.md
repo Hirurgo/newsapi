@@ -16,5 +16,5 @@ This project deploy on https://hirurgo.github.io/newsapi
 - see result on `https://hirurgo.github.io/newsapi`
 
 
- - mentor: Andrei_Hrakovich@epam.com
- - author: Mikalai_Shchakatsikhin@epam.com
+mentor: Andrei_Hrakovich@epam.com  
+author: Mikalai_Shchakatsikhin@epam.com
