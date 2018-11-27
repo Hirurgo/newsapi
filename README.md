@@ -1,5 +1,5 @@
 # newsapi
-##  Is an English-language news aggregator.
+## Is an English-language news aggregator.
 
 This is education repository for FronCamp courses. You can see all tasks in tasks folder.
 This project deploy on https://hirurgo.github.io/newsapi
@@ -15,5 +15,6 @@ This project deploy on https://hirurgo.github.io/newsapi
 - wait a minute
 - see result on `https://hirurgo.github.io/newsapi`
 
-mentor: Andrei_Hrakovich@epam.com
-author: Mikalai_Shchakatsikhin@epam.com
+
+ -mentor: Andrei_Hrakovich@epam.com
+ -author: Mikalai_Shchakatsikhin@epam.com
