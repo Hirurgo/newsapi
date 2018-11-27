@@ -33,6 +33,7 @@
     "rimraf": "^2.6.2",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "swear-words-loader": "^1.0.0",
     "url-loader": "^1.1.2",
     "webpack": "^4.26.0",
     "webpack-cli": "^3.1.2",
