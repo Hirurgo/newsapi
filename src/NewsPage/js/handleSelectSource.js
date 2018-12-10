@@ -1,4 +1,4 @@
-import { TOP_NEWS_TOGGLE_BUTTON } from './constants';
+import { TOP_NEWS_TOGGLE_BUTTON } from '../../constants';
 import loadNews from './loadNews';
 
 export default function handleSelectSource(event) {

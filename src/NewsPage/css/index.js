@@ -1,4 +1,4 @@
-import '../../default.scss';
+import '../../defaultStyles.scss';
 
 import '../css/header.scss';
 import '../css/newsList.scss';

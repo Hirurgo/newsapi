@@ -1,4 +1,4 @@
-import { SOURCE_SELECTOR } from './constants';
+import { SOURCE_SELECTOR } from '../../constants';
 
 export default function renderSourceElement(source) {
   const { name, id } = source;

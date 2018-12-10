@@ -1,2 +1,2 @@
-import '../default.scss';
+import '../defaultStyles.scss';
 import './styles.scss';

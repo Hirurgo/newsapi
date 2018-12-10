@@ -3,7 +3,7 @@ import {
   TOP_NEWS_TOGGLE_BUTTON,
   SOURCE_SELECTOR,
   NEWS_LIST
-} from './constants';
+} from '../../constants';
 import toggleMenu from './toggleMenu';
 import handleToggleTopNews from './handleToggleTopNews';
 import handleSelectSource from './handleSelectSource';

@@ -1,4 +1,4 @@
-import { MENU, MENU_TOGGLE_BUTTON } from './constants';
+import { MENU, MENU_TOGGLE_BUTTON } from '../../constants';
 
 export default function toggleMenu(event) {
   if (event) event.preventDefault();

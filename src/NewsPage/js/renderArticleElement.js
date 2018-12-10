@@ -1,4 +1,4 @@
-import { NEWS_LIST } from './constants';
+import { NEWS_LIST } from '../../constants';
 
 export default function renderArticleElement(article) {
   const { title, description, url, urlToImage } = article;

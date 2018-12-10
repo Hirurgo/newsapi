@@ -1,4 +1,4 @@
-import { NEWS_LIST } from './constants';
+import { NEWS_LIST } from '../../constants';
 
 export default function redirectToArticleSource(event) {
   let { target } = event;
