@@ -1,7 +1,7 @@
 export default class NetworkManager {
-  constructor(baseUrl, apiKey){
-    this.baseUrl = baseUrl;
-    this.apiKey = apiKey;
+  constructor(){
+    this.baseUrl = 'https://newsapi.org/v2';
+    this.apiKey = 'fee5ac1d35964578ab29d346362449e8';
 
     if(!this.instance) {
       this.instance = this;
@@ -9,11 +9,11 @@ export default class NetworkManager {
     return this.instance;
   }
 
-  get(path) {
+  get = path => {
     return fetch(`${this.baseUrl}${path}language=en&apiKey=${this.apiKey}`)
   }
 
-  post(path, body) {
+  post = (path, body) => {
     return fetch(
       `${this.baseUrl}${path}language=en&apiKey=${this.apiKey}`,
       {

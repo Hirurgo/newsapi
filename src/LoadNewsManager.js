@@ -1,5 +1,5 @@
 import NetworkManager from './NetworkManager';
-import { BASE_URL, API_KEY } from './constants';
+import requstLogger from './requstLogger';
 
 class LoadNewsManager {
   constructor(network){
@@ -24,6 +24,7 @@ class LoadNewsManager {
   }
 }
 
-const networkManager = new NetworkManager(BASE_URL, API_KEY);
+const networkManager = new NetworkManager();
+const networkManagerWithLogging = new Proxy(networkManager, requstLogger)
 
-export default new LoadNewsManager(networkManager);
+export default new LoadNewsManager(networkManagerWithLogging);;
