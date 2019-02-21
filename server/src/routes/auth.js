@@ -2,9 +2,9 @@ import mongoose from 'mongoose';
 import passport from 'passport';
 import express, { Router } from 'express';
 import jwt from 'jsonwebtoken';
-import User from '../models/user';
-import { secret } from '../config';
-import auth from '../config/passport';
+import User from '../models/User';
+import { SECRET } from '../config';
+import auth from '../auth';
 
 auth(passport);
 const router = Router();
@@ -34,7 +34,7 @@ router.post('/signin', (req, res) => {
         (err, isMatch) => {
           if (user && isMatch && !err) return res.json({
             success: true,
-            token: 'JWT ' + jwt.sign(user.toJSON(), secret),
+            token: 'JWT ' + jwt.sign(user.toJSON(), SECRET),
             user
           });
           

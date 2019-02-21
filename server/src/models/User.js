@@ -43,7 +43,7 @@ UserSchema.methods.comparePassword = (password, callback) =>
   bcrypt.compare(
     password,
     this.password,
-    (error, isMatch) => callback(error || null, isMatch);
+    (error, isMatch) => callback(error || null, isMatch)
   );
 
 export default mongoose.model('User', UserSchema);
